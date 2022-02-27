@@ -7,7 +7,7 @@ async function main() {
     const tasksList = document.getElementById('tasksUL');
     const existingTasks = await getAllTasksFromDB()
 
-    console.log(existingTasks)
+    //console.log(existingTasks)
 
     const taskData = [];
 
