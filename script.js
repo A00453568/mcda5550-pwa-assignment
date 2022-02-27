@@ -3,7 +3,7 @@ async function main() {
     const task_name = document.querySelector("[name='tname']");
     const due_date = document.querySelector("[name='dd']");
     const assigned_to = document.querySelector("[name='ast']");
-    const tasksList1 = document.getElementById('tasks'); //check
+    //const tasksList1 = document.getElementById('tasks'); //check
     const tasksList = document.getElementById('tasksUL');
     const existingTasks = await getAllTasksFromDB()
 
@@ -17,7 +17,7 @@ async function main() {
 
 
     function addTasks(taskName, dueDate, assignedTo) {
-        const div1 = document.createElement('div')//check
+        //const div1 = document.createElement('div')//check
         const div = document.createElement('li')
         div.classList.add('task')
         const h1 = document.createElement('h1')

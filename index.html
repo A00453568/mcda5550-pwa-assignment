@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="description" 
+    content="Author: Shailesh Pandey A00453568. This is a todo pwa assignment">
     <title>Intro</title>
     <link rel="stylesheet" href="./styles.css"> 
     <link rel="manifest" href="./manifest.json"> 
+    <link rel="apple-touch-icon" href="/icons/smu-icon-48x48.png">
 
     <script> if ('serviceWorker' in navigator) { // checking if the browser supports service workers
         window.addEventListener("load", function() { // when app loads, fire callback
@@ -29,9 +32,9 @@
 
 <body>
     <div class="header">
-        <img src="./icons/smu-icon-96x96.png" width="75px" />
+        <img src="./icons/smu-icon-96x96.png" width="75px" alt="SMU logo"/>
         <h1>PWA Task APP</h1>
-        <h3>Shailesh Pandey</h3>
+        <h2>Shailesh Pandey</h2>
     </div>
 
     <hr />
@@ -42,10 +45,10 @@
             <input type="text" id="tname" name="tname" placeholder="Task name">
 
             <label for="dDate">Due Date:</label>
-            <input type="date" id="dd" name="dd" placeholder="Date in dd/mm/yyyy format">
+            <input type="date" id="dd" name="dd" placeholder="Date in dd/mm/yyyy format" >
 
             <label for="assignee">Assigned To:</label>
-            <input type="text" id="ast" name="ast" placeholder="Name of the task assignee" >
+            <input type="text" id="ast" name="ast" placeholder="Name of the task assignee">
 
             <br/>
             <input type="submit" value="Add Task">
@@ -57,7 +60,10 @@
     <div id="tasks"></div>
     <ul id="tasksUL"></ul>
 </body>
-
+<script>document.getElementById("tname").required = true;
+document.getElementById("dd").required = true;
+document.getElementById("ast").required = true;
+</script>
 <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
 <script src="./db.js"></script>
 <script src="./script.js"></script>
