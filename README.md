@@ -1,7 +1,7 @@
 # PWA Assignemnt
 To create a PWA todo app.
 
-I have used JavaScript (Vanilla) for the assignment. Auto increment and other bonus tasks have also been implemented in it.
+I have used JavaScript (Vanilla) for the assignment. Auto increment and other bonus tasks such as date type have also been implemented in it.
 
 Steps involved:
 1. npm install
